@@ -3,7 +3,7 @@
 Group Name: __Fill your team name__. 
 
 Team Mates:
-1. __Daniel Imran__ and __2113649__
+1. __Daniel Imran__  __2113649__
 
 ## Rules
 1. You are allowed to have **3 group** members.
