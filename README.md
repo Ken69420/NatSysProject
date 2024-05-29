@@ -55,7 +55,7 @@ Team Mates:
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __linux__.
 2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __1. 8GB RAM, 32GB DISK and 2 vCPU </br> 2.16GB RAM, 32GB DISK and 4 vCPU__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __To commit changes made to the repo__.
 
 ## Exploring the Terminal
 
@@ -72,23 +72,173 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** __```/workspace/NatSysProject```__. </br></br>
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** __```root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin```__. </br></br>
+3. Run the command **df** . ***(1 mark)*** ```Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10346112  20807472  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        8     65528   1% /dev/shm
+/dev/root       30298176 24289972   5991820  81% /vscode
+/dev/sda1       46127956       96  43752284   1% /tmp
+/dev/loop3      32847680 10346112  20807472  34% /workspaces```. </br></br>
+4. Run the command **du** . ***(1 mark)***        ```./.git/info
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+8       ./.git/refs/heads
+8       ./.git/refs/remotes/origin
+12      ./.git/refs/remotes
+4       ./.git/refs/tags
+28      ./.git/refs
+4       ./.git/branches
+8       ./.git/logs/refs/heads
+8       ./.git/logs/refs/remotes/origin
+12      ./.git/logs/refs/remotes
+24      ./.git/logs/refs
+32      ./.git/logs
+8       ./.git/objects/04
+8       ./.git/objects/93
+8       ./.git/objects/fa
+12      ./.git/objects/ff
+12      ./.git/objects/72
+12      ./.git/objects/17
+12      ./.git/objects/b5
+8       ./.git/objects/c6
+8       ./.git/objects/4f
+8       ./.git/objects/eb
+12      ./.git/objects/3d
+8       ./.git/objects/83
+4       ./.git/objects/info
+12      ./.git/objects/71
+16      ./.git/objects/c3
+8       ./.git/objects/4b
+1824    ./.git/objects/pack
+8       ./.git/objects/f6
+8       ./.git/objects/41
+12      ./.git/objects/1c
+8       ./.git/objects/fc
+8       ./.git/objects/81
+8       ./.git/objects/60
+16      ./.git/objects/fb
+8       ./.git/objects/cb
+12      ./.git/objects/af
+8       ./.git/objects/fe
+8       ./.git/objects/cd
+8       ./.git/objects/52
+8       ./.git/objects/a6
+8       ./.git/objects/b2
+8       ./.git/objects/1b
+8       ./.git/objects/3a
+12      ./.git/objects/6e
+8       ./.git/objects/b9
+8       ./.git/objects/58
+8       ./.git/objects/7b
+8       ./.git/objects/20
+8       ./.git/objects/3f
+8       ./.git/objects/f2
+8       ./.git/objects/e7
+8       ./.git/objects/0b
+8       ./.git/objects/24
+8       ./.git/objects/91
+12      ./.git/objects/2e
+8       ./.git/objects/49
+8       ./.git/objects/a3
+8       ./.git/objects/0d
+12      ./.git/objects/e5
+8       ./.git/objects/fd
+8       ./.git/objects/b6
+8       ./.git/objects/86
+12      ./.git/objects/70
+8       ./.git/objects/47
+12      ./.git/objects/44
+12      ./.git/objects/73
+8       ./.git/objects/74
+8       ./.git/objects/d8
+12      ./.git/objects/62
+12      ./.git/objects/d2
+12      ./.git/objects/14
+8       ./.git/objects/4a
+8       ./.git/objects/96
+8       ./.git/objects/ab
+8       ./.git/objects/e9
+12      ./.git/objects/64
+2432    ./.git/objects
+68      ./.git/hooks
+2612    ./.git
+1972    ./images
+4604```    . </br></br>
+5. Run the command **ls** . ***(1 mark)*** __```README.md  images```__. </br></br>
+6. Run the command **ls -asl** . ***(1 mark)***
+```bash
+total 36
+ 4 drwxrwxrwx+ 4 codespace root  4096 May 29 04:11 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 May 29 04:11 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 May 29 04:21 .git
+20 -rw-rw-rw-  1 codespace root 16655 May 29 04:28 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 May 29 04:11 images
+``` 
+</br></br>
+7. Run the command **free -h** . ***(1 mark)***
+```bash
+total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.5Gi       209Mi       1.0Mi       6.1Gi       6.0Gi
+Swap:            0B          0B          0B
+```
+</br></br>
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***</br><img src=./images/cpuinfo.png>      <img src=./images/cpuinfo2.png></br></br>
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** </br> <img src=./images/top.png> </br><br>
+10. Run the command **uname -a**. ***(1 mark)***
+```bash
+Linux codespaces-22f0e3 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+</br></br>
+11. What is the available free memory in the system. ***(1 mark)***
+```bash
+Free:159Mi, Available:5.9Gi
+```
+</br><br>
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+```bash
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/loop3       32G   11G   20G  34% /workspaces
+```
+</br><br>
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+```bash
+Ubuntu 20.04.6 LTS
+```
+</br><br>
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __ls -asl provide more detailed information on the files and also show the hidden file__.</br><br>
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__. </br>
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __2977.134 MHz__.</br>
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+```bash
+2052 codespa+  20   0   21.1g 373976  45824 S   1.0   4.6   1:49.89 node
+```
+</br>
 
 ## Running your own container instance.
 
@@ -148,8 +298,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** __The files in the container did not persist as any changes, such as creating a file, are made in this writable layer. When the container is removed, this writable layer is also removed, taking all changes with it.__.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes we can run multiple instances debian linux and each of them is a separate container meaning changes in one instance will not be carry over to other instance as they are counted as separate container__.
 
 ## Running your own container with persistent storage
 
@@ -168,14 +318,21 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+
+```bash
+ls -l
+total 4
+-rw-rw-rw- 1 root root 23 May  29 06:10 helloworld.txt
+```
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+<img src=./images/sudochown.png>
 
 ## You are on your own, create your own static webpage
 
@@ -201,9 +358,18 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+```bash
+drwxrwxrwx+ 2 1000 1000 4096 May 29 06:48 /usr/local/apache2/htdocs
+```
 2. What port is the apache web server running. ***(1 mark)***
+apache web server is listening on port 80 and bind to local port 8080 through port binding
 3. What port is open for http protocol on the host machine? ***(1 mark)***
+```bash
+sudo netstat -tuln | grep 80
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN     
+tcp6       0      0 :::8080                 :::*                    LISTEN  
+```
 
 ## Create SUB Networks
 
@@ -222,11 +388,32 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __BusyBox is a software utility that provides a minimalist set of Unix utilities in a single executable file and --name is for assigning name to a container__.
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+```bash
+NETWORK ID     NAME      DRIVER    SCOPE
+e9ec86edb274   bluenet   bridge    local
+4aef35d31bc3   bridge    bridge    local
+82da3634537f   host      host      local
+bae5e2faf029   none      null      local
+2c988e578c63   rednet    bridge    local
+```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+
+gateway for c1 is: 172.18.0.1
+gateway for c2 is: 172.19.0.1
+
 4. What is the network address for the running container c1 and c2.
+
+c1: 172.18.0.2
+c2: 172.19.0.2
+
 5. Using the command ```docker exec c1 ping c2```, which basically issue a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+
+```bash 
+docker exec c1 ping c2
+ping: bad address 'c2'
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -235,6 +422,12 @@ docker network create bridgenet
 docker network connect bridgenet c1
 docker network connect bridgenet c2
 docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.150 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.090 ms
 ```
 
 ## What to submit
