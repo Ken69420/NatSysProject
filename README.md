@@ -3,9 +3,7 @@
 Group Name: __Fill your team name__. 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1. __Daniel Imran__ and __2113649__
 
 ## Rules
 1. You are allowed to have **3 group** members.
@@ -22,8 +20,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __https://github.com/Ken69420/NatSysProject.git__.
+2. How many files and folders are in this repository. ***(1 mark)*** __2 Files__.
 
 
 ## Exploring github codespaces
@@ -55,8 +53,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __linux__.
+2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __1. 8GB RAM, 32GB DISK and 2 vCPU </br> 2.16GB RAM, 32GB DISK and 4 vCPU__.
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
 
 ## Exploring the Terminal
